@@ -30,15 +30,15 @@
   --space-20: 5rem;
   --space-24: 6rem;
 
-  --color-bg:             #0a0a0a;
-  --color-surface:        #141414;
-  --color-surface-offset: #1a1a1a;
-  --color-divider:        #2a2a2a;
-  --color-border:         #333333;
+  --color-bg:             #515151;
+  --color-surface:        #5e5e5e;
+  --color-surface-offset: #656565;
+  --color-divider:        #707070;
+  --color-border:         #7a7a7a;
 
   --color-text:           #e8e8e8;
-  --color-text-muted:     #999999;
-  --color-text-faint:     #666666;
+  --color-text-muted:     #c0c0c0;
+  --color-text-faint:     #a0a0a0;
 
   --color-primary:        #d4d0c8;
   --color-primary-hover:  #e8e4dc;
@@ -132,8 +132,18 @@ p { text-wrap: pretty; max-width: 72ch; }
   letter-spacing: 0.15em;
   color: var(--color-text);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
 }
 .logo:hover { color: var(--color-primary); }
+
+.logo-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+}
 
 .nav {
   display: flex;
@@ -189,9 +199,9 @@ p { text-wrap: pretty; max-width: 72ch; }
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(10, 10, 10, 0.35) 0%,
-    rgba(10, 10, 10, 0.55) 50%,
-    rgba(10, 10, 10, 0.75) 100%
+    rgba(81, 81, 81, 0.35) 0%,
+    rgba(81, 81, 81, 0.55) 50%,
+    rgba(81, 81, 81, 0.75) 100%
   );
 }
 
@@ -224,7 +234,7 @@ p { text-wrap: pretty; max-width: 72ch; }
   display: inline-block;
   padding: var(--space-3) var(--space-8);
   background: rgba(255, 255, 255, 0.95);
-  color: #0a0a0a;
+  color: #515151;
   font-weight: 600;
   font-size: var(--text-sm);
   border-radius: var(--radius-lg);
@@ -233,7 +243,7 @@ p { text-wrap: pretty; max-width: 72ch; }
 }
 .hero-cta:hover {
   background: #ffffff;
-  color: #0a0a0a;
+  color: #515151;
   transform: translateY(-1px);
 }
 
@@ -473,6 +483,32 @@ p { text-wrap: pretty; max-width: 72ch; }
   text-decoration: none;
 }
 .footer a:hover { color: var(--color-text-muted); }
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.footer-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+.footer-mitch-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.mitch-link-logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  border-radius: 2px;
+}
 
 /* --- Scroll Animations --- */
 .fade-in {
