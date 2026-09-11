@@ -37,8 +37,8 @@
   --color-border:         #7a7a7a;
 
   --color-text:           #e8e8e8;
-  --color-text-muted:     #c0c0c0;
-  --color-text-faint:     #a0a0a0;
+  --color-text-muted:     #c9c9c9;
+  --color-text-faint:     #cccccc;
 
   --color-primary:        #d4d0c8;
   --color-primary-hover:  #e8e4dc;
@@ -727,7 +727,7 @@ p { text-wrap: pretty; max-width: 72ch; }
   font-family: var(--font-body);
   font-size: var(--text-base);
   color: var(--color-text);
-  background: var(--color-surface-offset);
+  background: #454545;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   padding: var(--space-3) var(--space-4);
@@ -748,10 +748,11 @@ p { text-wrap: pretty; max-width: 72ch; }
 .field textarea:focus {
   outline: none;
   border-color: var(--color-primary);
-  background: var(--color-surface);
+  background: #3f3f3f;
+  box-shadow: 0 0 0 3px rgba(212, 208, 200, 0.16);
 }
 .field input::placeholder,
-.field textarea::placeholder { color: var(--color-text-faint); }
+.field textarea::placeholder { color: #c2c2c2; }
 
 .form-hp { position: absolute; left: -9999px; opacity: 0; height: 0; width: 0; }
 
