@@ -15,13 +15,13 @@
    site works normally and just doesn't report conversions.
    ============================================================ */
 
-var GOOGLE_ADS_ID   = 'AW-18436646791';  /* NOTE: this is the Mitchell Family Farms
-                                            account. Pine straw ads run in the account
-                                            on sales@mitchellpinestraw.com — swap this
-                                            ID before spending, or conversions land in
-                                            the wrong account. */
-var FORM_CONVERSION = '';                /* e.g. 'aB1cDEfGhIjKlMnOp' */
-var CALL_CONVERSION = '';
+/* Verified Sept 11 2026 against Google Ads account 658-028-0043
+   ("Mitchell Family Farms" — the login is sales@mitchellpinestraw.com).
+   Pine straw shares this account with the bulk beef campaign, so the two
+   are kept apart by campaign-specific conversion goals, not by account. */
+var GOOGLE_ADS_ID   = 'AW-18436646791';
+var FORM_CONVERSION = 'x8vECNSl5PMcEIfPo9dE';  /* "Pine Straw - Quote Form Submit" */
+var CALL_CONVERSION = 'fRPpCNel5PMcEIfPo9dE';  /* "Pine Straw - Phone Click (diagnostic)" */
 
 var PHONE_DISPLAY = '(229) 206-1836';
 var PHONE_TEL     = '+12292061836';
