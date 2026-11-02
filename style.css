@@ -1018,3 +1018,8 @@ p { text-wrap: pretty; max-width: 72ch; }
 .hero-cta-outline:hover { background: rgba(255, 255, 255, 0.16); color: #ffffff; }
 
 @media (max-width: 640px) { .hero-actions .hero-cta { width: 100%; } }
+
+/* --- Regional service-area pages (/service-area/<region>/) --- */
+.region-page p + p { margin-top: var(--space-4); }
+.region-page h3 + p { margin-top: var(--space-2); }
+.region-page .states-grid { justify-content: flex-start; margin: var(--space-4) 0 var(--space-5); }
